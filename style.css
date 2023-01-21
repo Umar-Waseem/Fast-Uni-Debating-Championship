@@ -6,7 +6,11 @@ body{
     background-color: #690100;
 }
 
-.hover-maroon:hover{
+.maroon{
     background-color: #690100;
-    color: white;
+}
+
+
+.person-card{
+    background-color: #690100;
 }
