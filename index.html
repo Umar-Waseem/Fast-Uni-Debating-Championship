@@ -5,13 +5,24 @@
     <title>FUDC 2023</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
 
+    <!-- to top button -->
+    <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
 
+    <!-- tailwind nav bar -->
     <nav
         class="bg-black px-2 sm:px-4 py-2.5 dark:bg-black fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-black">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -37,9 +48,12 @@
                 <ul
                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 m dark:bg-black md:dark:bg-black dark:border-black">
                     <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded md:p-0  dark:text-gray-400 dark:border-gray-700">Home</a>
+                    </li>
+                    <li>
                         <a href="#our-team-div"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded md:p-0  dark:text-gray-400 dark:border-gray-700">Our
-                            Team</a>
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded md:p-0  dark:text-gray-400 dark:border-gray-700">Team</a>
                     </li>
                     <li>
                         <a href="#about-us"
@@ -56,9 +70,9 @@
     </nav>
 
 
-    <div id="nav-bar" class="flex flex-col md:flex-row">
+    <div id="nav-bar" class="flex flex-col md:flex-row mr-5">
         <div class="md:w-4/4">
-            <p class="text-center md:text-left w-full md:w-4/4 pt-52 md:pl-20 text-6xl text-gray-900 dark:text-white">
+            <p class="text-center sm:text-5xl sm:font-semibold md:text-left w-full md:w-3/4 pt-52 md:pt-60 md:pl-20 text-6xl text-gray-900 dark:text-white ">
                 Fast
                 University
                 Debating
@@ -87,7 +101,7 @@
                     Registered</button>
             </div>
         </div>
-        <img class="h-fit md:w-1/4 md:mt-48 md:mr-32" src="fudc-log.png" alt="">
+        <img class="h-fit w-3/5 m-5 m-auto md:w-1/4 md:mr-10 2xl:w-lg" src="fudc-log.png" alt="">
     </div>
 
 
@@ -106,7 +120,7 @@
         }
     </style>
 
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
+    <!-- <div class="max-w-sm w-full lg:max-w-full lg:flex">
         <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
             style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
         </div>
@@ -160,22 +174,170 @@
         </div>
     </div>
 
-    <!-- make a tailwind button that says see all teams and navigates to teams.html -->
+    
     <a href="teams.html" type="button" id="reg-button"
         class="mt-8 md:ml-20 mb-32 hover:bg-black hover:text-white bg-red focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-white dark:focus:ring-blue-800">See
-        All Teams</a>
+        All Teams</a> -->
 
+        <!-- Section of our team -->
+        <section  id="our-team-div" class="text-gray-600 bg-white body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-4xl font-bold title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+              </div>
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/2">
+                  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+                    <div class="flex-grow sm:pl-8">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+                      <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                      <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+                    <div class="flex-grow sm:pl-8">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                      <h3 class="text-gray-500 mb-3">Designer</h3>
+                      <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+                    <div class="flex-grow sm:pl-8">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+                      <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                      <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                    <div class="flex-grow sm:pl-8">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                      <h3 class="text-gray-500 mb-3">Designer</h3>
+                      <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex pl-4 mt-8 pt-8 lg:w-2/3 w-full mx-auto justify-center cursor-pointer">
+                    <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="teams.html">View All Team
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </section>
 
-
-    <div class="py-12 maroon">
-        <div class="container mx-auto px-4">
+    <div class="card" id="about-us">
+        <div class="content">
+          <div class="front">
             <h1
-                class="flex mb-16 justify-center py-6 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mt-12 font-bold text-5xl text-white">
+            class="flex mb-8 justify-center py-4 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mt-8 font-bold text-5xl ">
+            About Fast Debating Society
+        </h1>
+        <div class="flex flex-wrap justify-center items-center -mx-4">
+            <div class="w-full md:w-2/2 px-4 mb-8">
+                <p class="px-10 text-center">
+                    FAST Debating Society was founded back in 2005 by Samir Anwar Butt and Zubair Nabi, and since
+                    then it has become one of
+                    the most prestigious societies at FAST University. Here at FAST Debating Society we motivate
+                    people to have the courage
+                    to speak. It’s not just a debating society, it’s a platform for anyone who wants to boost their
+                    self-confidence and
+                    learn the art of persuasion and vocalisation. We do not reject anyone based on their
+                    debating/speaking skills. Instead,
+                    we try to motivate and teach each and every individual who comes at our door with the aim of
+                    self-improvement.
+                </p>
+            </div>           
+        </div>
+          </div>
+          <div class="back">
+            <h1
+                class="flex mb-8 justify-center py-4 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mt-8 font-bold text-5xl ">
                 About Fast
             </h1>
             <div class="flex flex-wrap justify-center items-center -mx-4">
-                <div class="w-full md:w-2/2 px-4 mb-8">
-                    <p class="text-white px-10 text-center">
+                <div class="w-full md:w-2/2 px-4 mb-8 overflow-hidden">
+                    <p class="px-10 text-center">
                         The National University of Computer and Emerging Sciences holds the honour of being Pakistan’s
                         first multi-campus
                         University chartered by the Federal Government in the private sector. The University started
@@ -192,51 +354,14 @@
 
             </div>
 
+          </div>
         </div>
-    </div>
+      </div>
 
 
 
 
-    <div class="maroon py-12" id="about-us">
-        <div class="container mx-auto px-4">
-            <h1
-                class="flex mb-16 justify-center text-center py-6 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mt-12 font-bold text-5xl text-white">
-                About Fast Debating Society
-            </h1>
-            <div class="flex flex-wrap justify-center items-center -mx-4">
-                <div class="w-full md:w-2/2 px-4 mb-8">
-                    <p class="text-white px-10 text-center">
-                        FAST Debating Society was founded back in 2005 by Samir Anwar Butt and Zubair Nabi, and since
-                        then it has become one of
-                        the most prestigious societies at FAST University. Here at FAST Debating Society we motivate
-                        people to have the courage
-                        to speak. It’s not just a debating society, it’s a platform for anyone who wants to boost their
-                        self-confidence and
-                        learn the art of persuasion and vocalisation. We do not reject anyone based on their
-                        debating/speaking skills. Instead,
-                        we try to motivate and teach each and every individual who comes at our door with the aim of
-                        self-improvement.
-                    </p>
-                </div>
-                <!-- <div class="w-full md:w-1/2 px-4 mb-8">
-                    <p class="text-gray-700">
-                        Nullam auctor, augue in iaculis tincidunt, odio lacus dictum nibh, id scelerisque magna nisl id
-                        ipsum. Sed auctor neque vitae nunc faucibus, id auctor velit rutrum.
-                    </p>
-                </div> -->
-            </div>
-            <!-- <div class="text-center">
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg">Learn
-                    More</button>
-            </div> -->
-        </div>
-    </div>
-
-
-
-
-    <footer id="footer" class="p-4 bg-white sm:p-6 dark:bg-black">
+    <footer id="footer" class="w-full absolute top-fullbottom-0 left-0 right-0 p-4 bg-white sm:p-6 dark:bg-black">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="#" class="flex items-center">
@@ -303,6 +428,33 @@
 
 
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script>
+        //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
 
 </body>
 
