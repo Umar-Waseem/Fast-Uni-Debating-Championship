@@ -1,3 +1,5 @@
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
 *{
     margin: 0;
 }
@@ -14,3 +16,80 @@ body{
 .person-card{
     background-color: #690100;
 }
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 18rem;
+    border-color: #f4f400;
+    perspective: 500px;
+    padding: 0 2%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+  }
+ 
+  
+  .content {
+    height: 100%;
+    width: 100%;
+    box-shadow:0 0px 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .content {
+    transform: rotateX(-180deg ) ;
+    transition: transform 0.8s;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background: #690100;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    color: #690100;
+    background-color: white;
+    transform: rotateX(-180deg );
+  }
+
+.section_to_change_color:nth-child(even){
+background: #fdfbfb;
+  }
+  #btn-back-to-top {
+    background: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    padding: .6rem .9rem;
+    z-index: 1;
+    box-shadow: -1px 2px 11px -2px rgba(0,0,0,0.91);
+    -webkit-box-shadow: -1px 2px 11px -2px rgba(0,0,0,0.91);
+    -moz-box-shadow: -1px 2px 11px -2px rgba(0,0,0,0.91);
+  }
+
+  @media screen and (max-width: 640px) {
+    .card {
+      height: 32rem;
+    }
+    .card:hover .content {
+      transform: rotateY(180deg) ;
+      transition: transform 0.8s;
+    }
+    .back {
+      transform: rotateY(180deg);
+    }
+
+  }

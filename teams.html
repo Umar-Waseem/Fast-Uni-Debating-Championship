@@ -5,11 +5,22 @@
     <title>FUDC 2023</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 
 <body>
+ <!-- to top button -->
+ <button
+ type="button"
+ class="btn btn-danger btn-floating btn-lg"
+ id="btn-back-to-top"
+ >
+<i class="fas fa-arrow-up"></i>
+</button>
 
     <!-- tailwind nav bar -->
     <nav
@@ -37,12 +48,16 @@
                 <ul
                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 m dark:bg-black md:dark:bg-black dark:border-black">
                     <li>
-                        <a href="#our-team-div"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded md:p-0  dark:text-gray-400 dark:border-gray-700">Our
+                        <a href="main.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded md:p-0  dark:text-gray-400 dark:border-gray-700">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded md:p-0  dark:text-gray-400 dark:border-gray-700">
                             Team</a>
                     </li>
                     <li>
-                        <a href="#about-us"
+                        <a href="main.html"
                             class="block py-2 pl-3 pr-4 text-gray-700 rounded md:p-0  dark:text-gray-400 dark:border-gray-700">About
                             Us</a>
                     </li>
@@ -73,470 +88,754 @@
         <div class="md:w-4/4">
             <p class="text-center md:text-left w-full md:w-4/4 pt-52 md:pl-20 md:mb-20 text-6xl text-gray-900 dark:text-white">
                 Our 
-                Teams
+                Team
             </p>
         </div>
     </div>
 
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Security
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
+ <!-- Section of team starts here -->
+    <section id="team_section" class="text-gray-600 body-font bg-white">
+        <div class="container  py-24 mx-auto">
+            
+            <!-- Section of Security -->
+            <div class="section_to_change_color">
+          <div class="flex flex-col text-center w-full mb-10">
+            <h1 class="text-4xl font-bold title-font mb-4 text-gray-900 tracking-widest">Security</h1>
+            <p class="lg:w-full mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-wrap m-4 mb-8">
 
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Security - Ibrahim Bin Umar</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus architecto fugiat veniam. Distinctio pariatur porro modi sapiente tempora. Ut quas vel necessitatibus odit, modi atque quam laudantium commodi veritatis! Praesentium?</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
+
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloribus fugiat alias ut velit assumenda fugit odit aliquam consectetur unde. Perspiciatis quidem est debitis ipsam sed magnam atque voluptatem sit.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat animi voluptate soluta repudiandae neque unde inventore voluptatum. Veniam assumenda laborum commodi. Consequatur a possimus maxime rerum iste. Nostrum, officiis!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+ <!-- Section of Logistics -->
+ <div class="section_to_change_color">
+ <div class="flex flex-col text-center w-full mb-10">
+    <h1 class="text-4xl font-bold title-font mb-4 text-gray-900 tracking-widest">Logistics</h1>
+    <p class="lg:w-full mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+  </div>
+  <div class="flex flex-wrap m-4 mb-8">
+
+    <div class="p-4 lg:w-full">
+      <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+        <div class="flex-grow sm:pl-8">
+          <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+          <h3 class="text-gray-500 mb-3">UI Developer</h3>
+          <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+          <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
     </div>
 
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Security - Shamir Ali</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
+    <div class="p-4 lg:w-full">
+      <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+        <div class="flex-grow sm:pl-8">
+          <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+          <h3 class="text-gray-500 mb-3">Designer</h3>
+          <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+          <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
         </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
+      </div>
     </div>
 
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Logistics
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
+    <div class="p-4 lg:w-full">
+      <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+        <div class="flex-grow sm:pl-8">
+          <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+          <h3 class="text-gray-500 mb-3">UI Developer</h3>
+          <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, id assumenda sint qui nisi nam aliquid debitis. Deleniti est nemo nisi, dolore reprehenderit corporis inventore, ipsum mollitia eos totam ducimus!</p>
+          <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
         </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Logistics - Aina Zainab</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Logistics - Umme Khadija</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
+    <div class="p-4 lg:w-full">
+      <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+        <div class="flex-grow sm:pl-8">
+          <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+          <h3 class="text-gray-500 mb-3">Designer</h3>
+          <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, amet soluta? Velit, eveniet! Quis iusto vel pariatur quibusdam dolorem blanditiis officiis mollitia, distinctio, provident soluta aut quasi maiores, similique et!</p>
+          <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-2 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
         </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Protocol
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Protocol - Usama Umar</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
+      </div>
+          </div>
         </div>
     </div>
+        <!-- Section of Logistics end here--------- -->
 
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Protocol - Marium Umar</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        <!-- Section of Protocols start here--------- -->
+        <div class="section_to_change_color">
+        <div class="flex flex-col text-center w-full mb-10">
+            <h1 class="text-4xl font-bold title-font mb-4 text-gray-900 tracking-widest">Protocols</h1>
+            <p class="lg:w-full mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-wrap m-4 mb-8">
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Hospitality/Accomodation
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director - Saad Mahboob</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Operations/Printing
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director - Mohib Humayun</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, id assumenda sint qui nisi nam aliquid debitis. Deleniti est nemo nisi, dolore reprehenderit corporis inventore, ipsum mollitia eos totam ducimus!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, amet soluta? Velit, eveniet! Quis iusto vel pariatur quibusdam dolorem blanditiis officiis mollitia, distinctio, provident soluta aut quasi maiores, similique et!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+                  </div>
+                </div>
+                </div>
+        <!-- Section of Protocols end here ---------  -->
 
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Events(Social)
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Events - Naufil Moten</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+         <!-- Section of Hospitality/Accomodations start here--------- -->
+         <div class="section_to_change_color">
+         <div class="flex flex-col text-center w-full mb-10">
+            <h1 class="text-4xl font-bold title-font mb-4 text-gray-900 tracking-widest">Hospitality/Accomodations</h1>
+            <p class="lg:w-full mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-wrap m-4 mb-8">
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Events - Ibrahim Bhatti</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Info/Registrations
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Info/Registrations - Syed Mustafa</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, id assumenda sint qui nisi nam aliquid debitis. Deleniti est nemo nisi, dolore reprehenderit corporis inventore, ipsum mollitia eos totam ducimus!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, amet soluta? Velit, eveniet! Quis iusto vel pariatur quibusdam dolorem blanditiis officiis mollitia, distinctio, provident soluta aut quasi maiores, similique et!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+                  </div>
+                </div>
+         </div>
+        <!-- Section of Hospitality/Accomodations end here ---------  -->
 
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Info/Registrations - Muhammad Haider</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        <!-- Section of Operations/Printing start here--------- -->
+        <div class="section_to_change_color">
+        <div class="flex flex-col text-center w-full mb-10">
+            <h1 class="text-4xl font-bold title-font mb-4 text-gray-900 tracking-widest">Events</h1>
+            <p class="lg:w-full mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-wrap m-4 mb-8">
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Sponsorship
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Sponsorship - Zaib un Nisa</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Sponsorship - </div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, id assumenda sint qui nisi nam aliquid debitis. Deleniti est nemo nisi, dolore reprehenderit corporis inventore, ipsum mollitia eos totam ducimus!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, amet soluta? Velit, eveniet! Quis iusto vel pariatur quibusdam dolorem blanditiis officiis mollitia, distinctio, provident soluta aut quasi maiores, similique et!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+                  </div>
+                </div>
+                </div>
+        <!-- Section of Operation/Printing end here ---------  -->
 
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Marketing / Outreach
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Marketing/ Outreach - Aimen Karim</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        <!-- Section of Events start here--------- -->
+        <div class="section_to_change_color">
+        <div class="flex flex-col text-center w-full mb-10">
+            <h1 class="text-4xl font-bold title-font mb-4 text-gray-900 tracking-widest">Logistics</h1>
+            <p class="lg:w-full mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-wrap m-4 mb-8">
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Marketing/Outreach - Talal Ahmed</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Finance
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director - Umar Farooq</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, id assumenda sint qui nisi nam aliquid debitis. Deleniti est nemo nisi, dolore reprehenderit corporis inventore, ipsum mollitia eos totam ducimus!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
+        
+            <div class="p-4 lg:w-full">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, amet soluta? Velit, eveniet! Quis iusto vel pariatur quibusdam dolorem blanditiis officiis mollitia, distinctio, provident soluta aut quasi maiores, similique et!</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+                  </div>
+                </div>
+                </div>
+        <!-- Section of Events end here ---------  -->
 
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Decor
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
+      </section>
 
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Decor - Kisaa Batool</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Director Decor - Aisha Adil</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
-        </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        Creative
-    </p></div>
-
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director Creative - Fahad Jehangir</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Social Media - Jibrael</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
-        </div>
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/4.jpg')" title="person">
-        </div>
-    </div>
-
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/8.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Deputy Publications - Musfirah</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div><p class="text-center md:text-center w-full md:w-4/4 pb-20 text-6xl text-gray-900 bg-white">
-        IT
-    </p></div>
-    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-        <div class="h-80 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg')" title="person">
-        </div>
-        <div
-            class="bg-white rounded-b py-10 lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-
-                <div class="text-gray-900 py-10 font-bold text-3xl mb-2">Director - Muhammad Umar Waseem</div>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum inventore magnam quasi
-                    eveniet. Odio tempore architecto veritatis quam ducimus maxime voluptatem porro accusamus,
-                    temporibus magnam sunt ea totam repellat optio quaerat. A cum earum, quidem quas ea, nemo fugit
-                    aliquam tempora corporis ullam amet id architecto voluptatem aperiam dolor!</p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <footer id="footer" class="p-4 bg-white sm:p-6 dark:bg-black">
+    <footer id="footer" class="relative w-full p-4 bg-white sm:p-6 dark:bg-black bottom-0 ">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="#" class="flex items-center">
@@ -566,7 +865,7 @@
                         </li>
                     </ul>
                 </div>
-
+            </div>
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
@@ -603,7 +902,33 @@
 
 
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script>
+        //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
 </body>
 
 </html>
